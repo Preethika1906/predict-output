@@ -1,0 +1,75 @@
+#Q11
+a = (5,(7,5,(1,2)),5,4)
+print(a.count(5))
+print(a[1][2])
+print(a * 3)
+print(len(a))
+b = (7,8,(4,5))
+print(a + b)     
+2
+(1, 2)
+(5, (7, 5, (1, 2)), 5, 4, 5, (7, 5, (1, 2)), 5, 4, 5, (7, 5, (1, 2)), 5, 4)
+4
+(5, (7, 5, (1, 2)), 5, 4, 7, 8, (4, 5))
+
+#Q12
+x = [3, 6, 9, 12, 15]
+y = x[::-1]
+print(y[1] + x[-3])     
+21
+
+#Q13
+word = "Whatever"
+print(word[:3] + word[-1] + word[4:2:-1])     
+Wharet
+
+#Q14
+nums = {3, 6, 9, 12}
+nums.add(15)
+nums.remove(6)
+nums.update([18, 21])
+nums.discard(99)
+print(sum(nums))     
+78
+
+#Q15
+info = {"name": "Sara", "age": 18, "state": "Kerala"}
+info["age"] += 4
+info["country"] = "India"
+print(info.keys())
+print(info.get("state", "Unknown"))     
+dict_keys(['name', 'age', 'state', 'country'])
+Kerala
+
+#Q16
+num_list = [5, 10, 15, 20, 25]
+res = list(map(lambda x: x % 3, num_list))
+print(res)    
+[2, 1, 0, 2, 1]
+
+#Q17
+ages = [15, 22, 18, 30, 12, 40, 90]
+adults = list(filter(lambda x: x >= 18, ages))
+print(len(adults))     
+5
+
+#Q18
+from functools import reduce
+nums = [1, 2, 3, 4, 5]
+result = reduce(lambda x, y: x * y, nums)
+print(result)    
+120
+
+#Q19
+alpha = ["a", "b", "c", "d"]
+print(alpha.pop(2) + alpha[-1])
+print(alpha)     
+cd
+['a', 'b', 'd']
+
+#Q20
+x = 10
+y = 3
+x, y = x % y, x // y
+print(x, y)     
+1 3
